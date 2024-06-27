@@ -6,6 +6,7 @@ import com.PagePerformanceTracker.backend.dto.SignUpRequest;
 import com.PagePerformanceTracker.backend.models.Role;
 import com.PagePerformanceTracker.backend.models.User;
 import com.PagePerformanceTracker.backend.repositories.UserRepository;
+import lombok.NoArgsConstructor;
 import lombok.RequiredArgsConstructor;
 import org.springframework.security.authentication.AuthenticationManager;
 import org.springframework.security.authentication.UsernamePasswordAuthenticationToken;

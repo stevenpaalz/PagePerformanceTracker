@@ -1,0 +1,61 @@
+Routes:
+
+/auth/signup
+    POST
+/auth/signin
+    POST
+
+/users/{user_id}
+    PUT
+    DELETE
+
+/users
+    GET
+
+/websites
+    GET
+    POST
+
+/websites/{website_id}
+    PUT
+    DELETE
+
+/websites/{website_id}/reports
+    GET
+paginated
+
+
+DB Model:
+Users
+    id
+    first_name
+    last_name
+    email
+    password
+    created_at
+    updated_at
+
+Websites
+    id
+    user_id
+    url
+    created_at
+    updated_at
+
+performance_reports
+    id
+    website_id
+    performance_score
+    accessibility_score
+    best_practices_score
+    seo_score
+    pwa_score
+    raw_json
+    timestamp
+
+historical_data
+    id
+    report_id
+    metric_name
+    metric_value
+    timestamp
