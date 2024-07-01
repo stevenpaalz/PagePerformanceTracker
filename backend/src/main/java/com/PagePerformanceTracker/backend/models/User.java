@@ -30,6 +30,8 @@ public class User implements UserDetails {
     private String password;
     private LocalDateTime createdAt;
     private LocalDateTime updatedAt;
+    @OneToMany(mappedBy = "user")
+    private List<Website> websites;
 
     @Enumerated(EnumType.STRING)
     private Role role;
